@@ -39,6 +39,10 @@ XLATE := xlate
 ifeq ($(USEAPI),yes)
   XLATE += -a
 endif
+MASKFILE=PATTERN_MASK
+ifneq ($(wildcard $(MASKFILE)),)
+  XLATE += -x $(MASKFILE)
+endif
 
 DESUMASU := NO
 ifeq ($(DESUMASU),GREPLE)
