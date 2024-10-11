@@ -20,8 +20,12 @@
       "스트라이프 모듈을 사용하면 동일한 패턴과 일치하는 블록이 비슷한 색상 계열의 다른 색상으로 표시됩니다.\n"
    ],
    [
-      "By default, two color series are prepared. Thus, when multiple patterns are searched, an even-numbered pattern and an odd-numbered pattern are assigned different color series. When multiple patterns are specified, only lines matching all patterns will be output, so the C<--need=1> option is required to relax this condition.\n",
-      "기본적으로 두 가지 색상 계열이 준비되어 있습니다. 따라서 여러 패턴이 검색되면 짝수 패턴과 홀수 패턴에 서로 다른 색상 계열이 할당됩니다. 여러 패턴을 지정하면 모든 패턴과 일치하는 줄만 출력되므로 이 조건을 완화하려면 C<--need=1> 옵션이 필요합니다.\n"
+      "By default, two color series are prepared. Thus, when multiple patterns are searched, an even-numbered pattern and an odd-numbered pattern are assigned different color series.\n",
+      "기본적으로 두 가지 색상 계열이 준비되어 있습니다. 따라서 여러 패턴을 검색할 때 짝수 패턴과 홀수 패턴에는 서로 다른 색상 계열이 할당됩니다.\n"
+   ],
+   [
+      "When multiple patterns are specified as in the above example, only lines matching all patterns will be output. So the C<--need=1> option is required to relax this condition.\n",
+      "위의 예와 같이 여러 패턴을 지정하면 모든 패턴과 일치하는 줄만 출력됩니다. 따라서 이 조건을 완화하려면 C<--need=1> 옵션이 필요합니다.\n"
    ],
    [
       "If you want to use different color series for three or more patterns, specify C<step> count when calling the module. The number of series can be increased up to 6.\n",

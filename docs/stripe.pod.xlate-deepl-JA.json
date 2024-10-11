@@ -5,7 +5,7 @@
    ],
    [
       "L<App::Greple::stripe> is a module for L<greple|App::Greple> to show matched text in zebra striping fashion.\n",
-      "L<App::Greple::stripe> は L<greple|App::Greple> 用のモジュールで、マッチしたテキストをゼブラストライプで表示します。\n"
+      "L<App::Greple::stripe> はマッチしたテキストをゼブラストライプで表示する L<greple|App::Greple> のモジュールです。\n"
    ],
    [
       "The following command matches two consecutive lines.\n",
@@ -13,31 +13,35 @@
    ],
    [
       "However, each matched block is colored by the same color, so it is not clear where the block breaks. One way is to explicitly display the blocks using the C<--blockend> option.\n",
-      "しかし、マッチしたブロックはそれぞれ同じ色で表示されるため、どこでブロックが途切れるのかがわかりません。一つの方法は、C<--blockend>オプションを使って明示的にブロックを表示することである。\n"
+      "しかし、マッチしたブロックは同じ色で表示されるので、どこでブロックが途切れるのかがわかりません。一つの方法は、C<--blockend>オプションを使って明示的にブロックを表示することです。\n"
    ],
    [
       "Using the stripe module, blocks matching the same pattern are colored with different colors of the similar color series.\n",
-      "stripe モジュールを使うと、同じパターンにマッチしたブロックは、類似した色系列の異なる色で着色されます。\n"
+      "stripeモジュールを使うと、同じパターンにマッチしたブロックは、類似色系列の異なる色で着色されます。\n"
    ],
    [
-      "By default, two color series are prepared. Thus, when multiple patterns are searched, an even-numbered pattern and an odd-numbered pattern are assigned different color series. When multiple patterns are specified, only lines matching all patterns will be output, so the C<--need=1> option is required to relax this condition.\n",
-      "デフォルトでは、2つの色系列が用意されている。そのため、複数のパターンを検索した場合、偶数パターンと奇数パターンでは異なる色系列が割り当てられる。複数のパターンを指定した場合、すべてのパターンに一致する行だけが出力されるので、この条件を緩和するには C<--need=1> オプションが必要である。\n"
+      "By default, two color series are prepared. Thus, when multiple patterns are searched, an even-numbered pattern and an odd-numbered pattern are assigned different color series.\n",
+      "デフォルトでは2つの色系列が用意されている。そのため、複数のパターンを検索した場合、偶数パターンと奇数パターンでは、それぞれ異なる色系列が割り当てられる。\n"
+   ],
+   [
+      "When multiple patterns are specified as in the above example, only lines matching all patterns will be output. So the C<--need=1> option is required to relax this condition.\n",
+      "上の例のように複数のパターンを指定した場合、すべてのパターンに一致する行だけが出力される。そこで、この条件を緩和するためにC<--need=1>オプションが必要となる。\n"
    ],
    [
       "If you want to use different color series for three or more patterns, specify C<step> count when calling the module. The number of series can be increased up to 6.\n",
-      "3つ以上のパターンで異なる色のシリーズを使いたい場合は、モジュールを呼び出す際にC<ステップ>カウントを指定する。シリーズ数は6まで増やせる。\n"
+      "3つ以上のパターンで異なる色系列を使いたい場合は、モジュールを呼び出すときに C<step> 回数を指定してください。シリーズ数は6まで増やせます。\n"
    ],
    [
       "There are options specific to the B<stripe> module. They can be specified either at the time of module declaration or as options following the module declaration and ending with C<-->.\n",
-      "B<stripe>モジュール特有のオプションがある。これらは、モジュール宣言時に指定するか、モジュール宣言の後にC<-->で終わるオプションとして指定することができる。\n"
+      "B<stripe>モジュール特有のオプションがあります。これらはモジュール宣言時に指定するか、モジュール宣言の後にC<-->で終わるオプションとして指定します。\n"
    ],
    [
       "The following two commands have exactly the same effect.\n",
-      "以下の2つのコマンドは全く同じ効果を持つ。\n"
+      "次の2つのコマンドは全く同じ効果を持ちます。\n"
    ],
    [
       "Set the step count to I<n>.\n",
-      "ステップ数を I<n> にする。\n"
+      "ステップ数をI<n>に設定する。\n"
    ],
    [
       "Use dark background colors.\n",
@@ -45,6 +49,6 @@
    ],
    [
       "Use C<--face> option to set foreground color for all colormap. The following command sets the foreground color to white and fills the entire line with the background color.\n",
-      "C<--face>オプションを使用して、すべてのカラーマップの前景色を設定する。次のコマンドは描画色を白に設定し、行全体を背景色で塗りつぶす。\n"
+      "すべてのカラーマップの前景色を設定するには C<--face> オプションを使います。次のコマンドは前景色を白に設定し、行全体を背景色で塗りつぶします。\n"
    ]
 ]

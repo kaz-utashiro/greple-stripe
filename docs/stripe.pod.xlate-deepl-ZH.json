@@ -20,8 +20,12 @@
       "使用条纹模块，匹配相同图案的图块会用相似颜色系列的不同颜色着色。\n"
    ],
    [
-      "By default, two color series are prepared. Thus, when multiple patterns are searched, an even-numbered pattern and an odd-numbered pattern are assigned different color series. When multiple patterns are specified, only lines matching all patterns will be output, so the C<--need=1> option is required to relax this condition.\n",
-      "默认情况下，会准备两个颜色系列。因此，当搜索多个图案时，偶数图案和奇数图案会被分配不同的颜色系列。如果指定了多个图案，则只会输出符合所有图案的行，因此需要使用 C<--need=1> 选项来放宽这一条件。\n"
+      "By default, two color series are prepared. Thus, when multiple patterns are searched, an even-numbered pattern and an odd-numbered pattern are assigned different color series.\n",
+      "默认情况下，会准备两个颜色系列。因此，在搜索多个图案时，偶数图案和奇数图案会被分配不同的颜色系列。\n"
+   ],
+   [
+      "When multiple patterns are specified as in the above example, only lines matching all patterns will be output. So the C<--need=1> option is required to relax this condition.\n",
+      "如果像上例那样指定了多个模式，则只会输出与所有模式匹配的行。因此，需要使用 C<--need=1> 选项来放宽这一条件。\n"
    ],
    [
       "If you want to use different color series for three or more patterns, specify C<step> count when calling the module. The number of series can be increased up to 6.\n",
