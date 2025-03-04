@@ -9,7 +9,7 @@ App::Greple::stripe - Greple zebra stripe module
 
 # VERSION
 
-Version 1.00
+Version 1.01
 
 # DESCRIPTION
 
