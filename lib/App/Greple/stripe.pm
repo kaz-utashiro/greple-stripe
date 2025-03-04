@@ -81,9 +81,11 @@ There are options specific to the B<stripe> module.  They can be
 specified either at the time of module declaration or as options
 following the module declaration and ending with C<-->.
 
-The following two commands have exactly the same effect.
+The following three commands have exactly the same effect.
 
-    greple -Mstripe=config=step=3
+    greple -Mstripe::config=step=3
+
+    greple -Mstripe --config step=3 --
 
     greple -Mstripe --step=3 --
 
@@ -122,6 +124,8 @@ entire line with the background color.
 L<App::Greple>
 
 L<App::Greple::xlate>
+
+L<Getopt::EX::Config>
 
 =head1 AUTHOR
 
