@@ -38,6 +38,7 @@
          "requires" : {
             "App::Greple" : "9.16",
             "Getopt::EX" : "v2.2.1",
+            "Getopt::EX::Config" : "0",
             "Hash::Util" : "0",
             "List::Util" : "1.56",
             "Scalar::Util" : "0",
@@ -66,6 +67,6 @@
    "x_contributors" : [
       "Kazumasa Utashiro <kaz@utashiro.com>"
    ],
-   "x_serialization_backend" : "JSON::PP version 4.12",
+   "x_serialization_backend" : "JSON::PP version 4.16",
    "x_static_install" : 1
 }
