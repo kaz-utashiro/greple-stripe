@@ -91,6 +91,9 @@ The following three commands have exactly the same effect.
 
     greple -Mstripe --step=3 --
 
+Note that, `set` function can be used instead of `config` for
+backward compatibility, at this point.
+
 - **-Mstripe::config**=**step**=_n_
 - **--step**=_n_
 

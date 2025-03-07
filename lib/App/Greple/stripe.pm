@@ -89,6 +89,9 @@ The following three commands have exactly the same effect.
 
     greple -Mstripe --step=3 --
 
+Note that, C<set> function can be used instead of C<config> for
+backward compatibility, at this point.
+
 =over 7
 
 =item B<-Mstripe::config>=B<step>=I<n>
@@ -146,16 +149,12 @@ use Scalar::Util;
 *is_number = \&Scalar::Util::looks_like_number;
 use Data::Dumper;
 
-use Getopt::EX::Config;
-
+use Getopt::EX::Config qw(config set);
 my $config = Getopt::EX::Config->new(
     step     => 2,
     darkmode => undef,
 );
 lock_keys %{$config};
-
-# for backward compatibility
-sub set { config @_ }
 
 my %series = (
     light => [
@@ -178,15 +177,15 @@ my %series = (
 
 sub finalize {
     our($mod, $argv) = @_;
-    $config->deal_with(
+    Getopt::EX::Config->deal_with(
 	$argv,
-	map "$_:1", keys %{$config},
+	map("$_:1", keys %{$config}),
     );
     my @default = qw(--stripe-postgrep);
     my @cm = qw(@);
-    my $map = $config->{darkmode} ? $series{dark} : $series{light};
+    my $map = config('darkmode') ? $series{dark} : $series{light};
     for my $i (0, 1) {
-	for my $s (0 .. $config->{step} - 1) {
+	for my $s (0 .. config('step') - 1) {
 	    push @cm, $map->[$s % @$map]->[$i];
 	}
     }
@@ -199,7 +198,7 @@ sub finalize {
 #
 sub stripe {
     my $grep = shift;
-    my $step = $config->{step};
+    my $step = config('step');
     if ($step == 0) {
 	$step = _max_index($grep) + 1;
     }

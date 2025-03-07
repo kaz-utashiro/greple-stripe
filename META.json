@@ -38,7 +38,7 @@
          "requires" : {
             "App::Greple" : "9.16",
             "Getopt::EX" : "v2.2.1",
-            "Getopt::EX::Config" : "0",
+            "Getopt::EX::Config" : "0.9904",
             "Hash::Util" : "0",
             "List::Util" : "1.56",
             "Scalar::Util" : "0",
