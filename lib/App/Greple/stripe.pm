@@ -219,6 +219,7 @@ sub _max_index {
 	my($b, @match) = @$r;
 	$max = max($max, map($_->[2], @match));
     }
+    return $max;
 }
 
 1;
