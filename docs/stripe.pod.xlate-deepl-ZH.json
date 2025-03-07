@@ -36,8 +36,12 @@
       "B<stripe> 模块有一些特定的选项。这些选项可以在模块声明时指定，也可以在模块声明后以 C<--> 结尾作为选项指定。\n"
    ],
    [
-      "The following two commands have exactly the same effect.\n",
-      "以下两条命令具有完全相同的效果。\n"
+      "The following three commands have exactly the same effect.\n",
+      "以下三条命令具有完全相同的效果。\n"
+   ],
+   [
+      "Note that, C<set> function can be used instead of C<config> for backward compatibility, at this point.\n",
+      "请注意，此时可以使用 C<set> 函数代替 C<config>，以实现向后兼容。\n"
    ],
    [
       "Set the step count to I<n>.\n",

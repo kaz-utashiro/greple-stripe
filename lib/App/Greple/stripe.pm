@@ -3,7 +3,7 @@ package App::Greple::stripe;
 use 5.024;
 use warnings;
 
-our $VERSION = "1.01";
+our $VERSION = "1.02";
 
 =encoding utf-8
 
@@ -17,7 +17,7 @@ App::Greple::stripe - Greple zebra stripe module
 
 =head1 VERSION
 
-Version 1.01
+Version 1.02
 
 =head1 DESCRIPTION
 

@@ -36,8 +36,12 @@
       "B<stripe>モジュール特有のオプションがあります。これらはモジュール宣言時に指定するか、モジュール宣言の後にC<-->で終わるオプションとして指定します。\n"
    ],
    [
-      "The following two commands have exactly the same effect.\n",
-      "次の2つのコマンドは全く同じ効果を持ちます。\n"
+      "The following three commands have exactly the same effect.\n",
+      "以下の3つのコマンドは全く同じ効果をもたらします。\n"
+   ],
+   [
+      "Note that, C<set> function can be used instead of C<config> for backward compatibility, at this point.\n",
+      "なお、現時点では下位互換性のためにC<config>の代わりにC<set>関数を使うことができます。\n"
    ],
    [
       "Set the step count to I<n>.\n",

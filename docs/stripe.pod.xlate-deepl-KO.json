@@ -36,8 +36,12 @@
       "B<스트라이프> 모듈에 특정한 옵션이 있습니다. 모듈을 선언할 때 지정하거나 모듈 선언 뒤에 C<-->로 끝나는 옵션으로 지정할 수 있습니다.\n"
    ],
    [
-      "The following two commands have exactly the same effect.\n",
-      "다음 두 명령은 정확히 같은 효과를 냅니다.\n"
+      "The following three commands have exactly the same effect.\n",
+      "다음 세 가지 명령은 완전히 동일한 효과를 냅니다.\n"
+   ],
+   [
+      "Note that, C<set> function can be used instead of C<config> for backward compatibility, at this point.\n",
+      "현재로서는 이전 버전과의 호환성을 위해 C<set> 함수를 C<config> 대신 사용할 수 있다는 점에 유의하세요.\n"
    ],
    [
       "Set the step count to I<n>.\n",
