@@ -69,7 +69,7 @@ If you want to use different color series for three or more patterns,
 specify `step` count when calling the module.  The number of series
 can be increased up to 6.
 
-    greple -Mstripe::config=step=3 --need=1 -E p1 -E p2 -E p3 ...
+    greple -Mstripe --step=3 -- --need=1 -E p1 -E p2 -E p3 ...
 
 <div>
     <p>
