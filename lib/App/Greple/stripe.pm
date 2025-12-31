@@ -179,7 +179,7 @@ sub finalize {
     our($mod, $argv) = @_;
     Getopt::EX::Config->deal_with(
 	$argv,
-	map("$_:1", keys %{$config}),
+	map("$_:1", grep /^[a-zA-Z]/, keys %{$config}),
     );
     my @default = qw(--stripe-postgrep);
     my @cm = qw(@);
