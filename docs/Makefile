@@ -54,7 +54,7 @@ JA_FILTER := greple -Mperl -Msubst::desumasu \
 	--$(JA_FORM)
 endif
 ifeq ($(DESUMASU),GPTY)
-JA_FILTER := perl -I../lib -S greple \
+JA_FILTER := PERL5LIB=../lib$${PERL5LIB:+:$$PERL5LIB} greple \
 	-Mtee gpty -d -q -t 0 \
 		-s '以下の項目に挙げる指示にしたがって、続く日本語の文章を変換してください' \
 		-s '語尾がない文については付け加えずにそのままにする' \
